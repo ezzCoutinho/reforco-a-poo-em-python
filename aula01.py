@@ -5,29 +5,16 @@
 # STRING = "Luiz"
 # print(STRING.upper())
 # print(isinstance(STRING, str))
-class Pessoa1:
-    nome = "Luiz"
-    sobrenome = "Miranda"
-    idade = 30
-
-    def falar(self):
-        print(
-            f"Olá, meu nome é {self.nome} {self.sobrenome} e eu tenho {self.idade} anos."
-        )
+# self referencia o objeto que está sendo manipulado.
+class Pessoa:
+    def __init__(self, nome, sobrenome):  # método de inicialização
+        self.nome = nome
+        self.sobrenome = sobrenome
 
 
-class Pessoa2:
-    nome = "Maria"
-    sobrenome = "Joana"
-    idade = 25
-
-    def falar(self):
-        print(
-            f"Olá, meu nome é {self.nome} {self.sobrenome} e eu tenho {self.idade} anos."
-        )
-
-
-p1 = Pessoa1()
-p2 = Pessoa2()
-p1.falar()
-p2.falar()
+p1 = Pessoa("Luiz", "Miranda")  # instância da classe Pessoa
+p2 = Pessoa("Maria", "Joana")  # instância da classe Pessoa2
+print(p1.nome)
+print(p1.sobrenome)
+print(p2.nome)
+print(p2.sobrenome)
