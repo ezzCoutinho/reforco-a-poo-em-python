@@ -6,4 +6,5 @@
 # C0114: missing-module-docstring
 # C0115: missing-class-docstring
 # C0116: missing-function-docstring
-disable = C0114,C0115,C0116
+# C0301: line-too-long
+disable = C0114,C0115,C0116,C0301
